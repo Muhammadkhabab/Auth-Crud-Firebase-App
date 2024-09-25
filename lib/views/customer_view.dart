@@ -35,7 +35,7 @@ class _ViewCustomersViewState extends State<ViewCustomersView> {
       body: Consumer<CustomerController>(
         builder: (context, controller, _) {
           if (controller.customers.isEmpty) {
-            return const Center(child: CircularProgressIndicator());
+            return const Center(child: Text('No Customers added'));
           } else {
             return ListView.builder(
               itemCount: controller.customers.length,
