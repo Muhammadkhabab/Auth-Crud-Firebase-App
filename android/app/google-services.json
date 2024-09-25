@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "693676514757",
+    "project_id": "dashboard-cli-9d665",
+    "storage_bucket": "dashboard-cli-9d665.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693676514757:android:3b1589080804b70a987fac",
+        "android_client_info": {
+          "package_name": "com.dashboard.dumy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB79WcNsMmU6itnBKlo1kgsZH6X4pXXuJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
