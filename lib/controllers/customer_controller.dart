@@ -5,7 +5,7 @@ import 'package:firebase_core/firebase_core.dart';
 
 class CustomerController with ChangeNotifier {
   final _database = FirebaseDatabase.instance.ref().child('customers');
-  List<Customer> _customers = [];
+  final List<Customer> _customers = [];
 
   List<Customer> get customers => _customers;
   int get totalCustomers => _customers.length;
@@ -15,7 +15,8 @@ class CustomerController with ChangeNotifier {
     _customers.clear();
     DatabaseEvent event = await _database.once(); // Fetch the event of the data
     DataSnapshot snapshot = event.snapshot;
-    if (snapshot.exists) { // Check if the snapshot contains data
+    if (snapshot.exists) {
+      // Check if the snapshot contains data
       Map<dynamic, dynamic> customersMap = snapshot.value as Map<dynamic, dynamic>;
       customersMap.forEach((key, value) {
         _customers.add(Customer(
